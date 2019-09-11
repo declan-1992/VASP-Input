@@ -1,0 +1,42 @@
+general:
+    SYSTEM = phos_nano
+    ISTART = 0
+    ICHARG = 2
+
+AMIX    =       0.2
+BMIX    =       0.0001 ! almost zero, but 0 will crash some versions
+AMIX_MAG        =       0.8
+BMIX_MAG        =       0.0001 ! almost zero, but 0 will crash some versions
+
+    GGA = PE
+    ISMEAR = 0
+    SIGMA = 0.022
+    EDIFF = 1.0E-8
+    EDIFFG = 1.0E-7
+    ENCUT = 800
+    NELM = 215
+    NELMIN = 4
+    !NELMDL = -15
+    NCORE = 18
+    NPAR = 16
+    PREC = Accurate
+
+    NBANDS = 160
+
+    LOPTICS = .TRUE.
+    NEDOS = 100000
+
+    LCHARG = .FALSE.
+    LWAVE = .FALSE.
+    CSHIFT = 0.2
+    LMAXMIX = 6
+    LSORBIT = .TRUE.
+    MAGMOM = 0 0 3.25 0 0 3.25 0 0 3.25
+    SAXIS = 0 0 1
+    GGA_COMPAT = .FALSE.
+    ISYM = -1
+
+dynamic:
+    IBRION = -1
+    !ISIF = 2
+    !NSW = 1000
