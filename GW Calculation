@@ -1,0 +1,46 @@
+general:
+    SYSTEM = phos_nano
+    ISTART = 1
+    ICHARG = 2
+    AMIX = 0.1
+    BMIX = 0.01
+    GGA = PE
+    ISMEAR = 0
+    SIGMA = 0.01
+    EDIFF = 1.0E-8
+    EDIFFG = -0.001
+    ENCUT = 600
+    NELM = 1
+    !NELMIN = 4
+    !NELMDL = -30
+    !NCORE = 18
+    KPAR = 21
+    IVDW =202
+    LSCSGRAD = .TRUE.
+    PREC = Accurate
+
+    NBANDS = 180
+
+    LWAVE = .TRUE.
+    LCHARG = .FALSE.
+
+    LOPTICS = .TRUE.
+    LPEAD = .TRUE.
+    LRPA = .TRUE.
+    ALGO = GW0
+    ENCUTGW = 200
+    NOMEGA = 72
+    NBANDSGW = 180
+    LSPECTRAL = .TRUE.
+    LSPECTRALGW = .TRUE.
+
+    NEDOS = 100000
+
+    IDIPOL = 3
+    LDIPOL = .TRUE.
+    DIPOL = 0.5 0.5 0.5
+
+dynamic:
+    IBRION = -1
+    !ISIF = 2
+    !NSW = 1000
