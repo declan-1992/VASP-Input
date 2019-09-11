@@ -1,0 +1,29 @@
+general:
+    SYSTEM = phos_nano
+    ISTART = 0
+    ICHARG = 0
+    !AMIX = 0.1
+    !BMIX = 0.0001
+    GGA = PS
+    ISMEAR = 0
+    SIGMA = 0.01
+    EDIFF = 1.0E-8
+    EDIFFG = -0.01
+    ENCUT = 800
+    NELM = 230
+    NELMIN = 4
+    NELMDL = -30
+    !NCORE = 12
+    !NPAR = 10
+    PREC = Accurate
+
+    LEPSILON = .TRUE.
+
+    LCHARG = .FALSE.
+    LWAVE = .FALSE.
+
+dynamic:
+    IBRION = 8
+    NEFREE = 4
+    !ISIF = 3
+    !NSW = 1000
