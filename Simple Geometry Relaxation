@@ -1,0 +1,22 @@
+general:
+    SYSTEM = phos_nano
+    ISTART = 0
+    ICHARG = 2
+
+    GGA = PE
+    ISMEAR = 0
+    SIGMA = 0.022
+    EDIFF = 1.0E-7
+    EDIFFG = -0.001
+    ENCUT = 800
+    NELM = 215
+    NELMIN = 4
+    NCORE = 12
+    NPAR = 8
+    PREC = Accurate
+
+
+dynamic:
+    IBRION = 2
+    ISIF = 2
+    NSW = 1000
